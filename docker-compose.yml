@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: ./Dockerfile
     environment:
-      - HTTP_PORT=9501
+      - HTTP_PORT=9503
     depends_on:
       - db
     network_mode: host

@@ -6,16 +6,17 @@ use axum::{
     routing::{get, post},
     Router,
 };
-use std::{
-    env,
-    time:: SystemTime
-};
 use chrono::{DateTime, Utc};
 use deadpool::Runtime;
 use deadpool_postgres::GenericClient;
 use postgres_types::Json;
 use serde_json::{from_value, to_string, Value};
-use std::{error::Error, net::SocketAddr};
+use std::{
+    error::Error, 
+    net::SocketAddr,
+    env,
+    time:: SystemTime
+};
 use tokio_postgres::NoTls;
 
 //⠀⠀⠀⠀⠀⠀⠀⠀ ⢀⣠⣤⣶⣶⣶⣶⣶⣤⣄⡀
